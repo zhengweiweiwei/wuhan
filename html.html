@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			background-image:url(123.png);
+		}
+		#first{
+			height:300px;
+			width:1400px;
+			background-color:rgb(200,0,0,0.2);
+		}
+		#second{
+			height:300px;
+			width:1400px;
+			background-color:rgb(200,0,0,0.2);
+		}
+	</style>
+</head>
+<body>
+	<div id="first" style="margin-left:0px">
+	<div id="dog" style="height: 300px ;width:300px ;float:left"><img src="dog.jpg"  style="height: 300px ;width:300px">
+	</div>
+	<p style="height:300px; font-size:60px ;color:black;display:inline-block;float:left">加油！我们能赢！！我们必胜！！！<br/>
+	fighting! ! !       We are toghther!  !  !
+	</p>
+	</div>
+
+	<div id="second" style="margin-left:0px;height:300px">
+	<img src="wu1.jpg" style="height:300px ;width:340px;opacity:0.6;float:left;">
+	<img src="wu2.jpg" style="height:300px ;width:340px;opacity:0.6;float:left;">
+	<img src="wu4.jpg" style="height:300px ;width:340px;opacity:0.6;float:left;">
+	<img src="wu3.jpg" style="height:300px ;width:340px;opacity:0.6;float:left;">
+	</p>
+	</div>
+</body>
+<script type="text/javascript">
+	var first=document.getElementById("first");
+
+
+	var x=setInterval(function(){
+		first.style.marginLeft=parseInt(first.style.marginLeft)+1+"px";
+	},10)
+setInterval(function(){
+	first.style.marginLeft="-1500px";
+	clearInterval(x);
+	x=setInterval(function(){
+		first.style.marginLeft=parseInt(first.style.marginLeft)+1+"px";
+	})
+},11700);
+</script>
+</html>
